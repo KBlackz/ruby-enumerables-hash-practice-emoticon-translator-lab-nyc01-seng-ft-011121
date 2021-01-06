@@ -13,8 +13,8 @@ end
 def get_japanese_emoticon(file_name, emoticon)
   hash = load_library(file_name)
   hash.each do |key, value|
-    if value[:japanese] == emoticon 
-      return value[:english]
+    if value[:english] == emoticon 
+      return value[:japanese]
     end
     
   end
