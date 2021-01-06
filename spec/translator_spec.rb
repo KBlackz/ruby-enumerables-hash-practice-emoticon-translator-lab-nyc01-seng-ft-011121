@@ -138,6 +138,7 @@ describe "#get_japanese_emoticon" do
   end
 
   it "returns the Japanese equivalent of an English grinning" do
+    binding.pry
     expect(get_japanese_emoticon("./lib/emoticons.yml", "=D")).to eq("(￣ー￣)")
   end
 
