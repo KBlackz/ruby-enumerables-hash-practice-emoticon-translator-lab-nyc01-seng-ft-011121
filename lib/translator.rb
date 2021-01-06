@@ -24,7 +24,7 @@ def get_english_meaning
    hash = load_library(file_name)
   hash.each do |key, value|
     if value[:japanese] == emoticon 
-      return value[:english]
+      return key
     end
     
   end
